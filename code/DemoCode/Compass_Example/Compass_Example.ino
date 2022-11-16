@@ -54,7 +54,7 @@ void displaySensorDetails(void)
 
 void setup(void) 
 {
-  Serial.begin(9600);
+  Serial.begin(115200);
   Serial.println("HMC5883 Magnetometer Test"); Serial.println("");
   
   /* Initialise the sensor */
