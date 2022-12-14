@@ -40,13 +40,13 @@
 
  After getting a better feel for what work had *already* been done in this space, I felt comfortable setting some project goals for myself while working on ArduRover. I split the goals into two groups, functional and personal, so that I could look back at the end of the semester and see what I was able to achieve in both areas.
 
- #### 3a. Functional Goals
+#### 3a. Functional Goals
  - Create a parts list of interopable components compass unit, GPS receiver, motor controller, etc.
  - Assemble a fully-functional (can drive, turn, etc.) robotic car chassis 
  - Control car motors with an Arduino microcontroller
  - Enable autonomous driving capabilities with GPS + compass data
 
- #### 3b. Personal Goals
+#### 3b. Personal Goals
  - Develop and stick achievable milestone deadlines
  - Learn how to navigate open-source hardware docs 
  - Learn how to write software for hardware
@@ -55,7 +55,7 @@
 
 ## 4. Project Status
 
- #### 4a. Current Status
+#### 4a. Current Status
 
  Currently, ArduRover rolls! The car chassis is based on a small, cheap RC car from Amazon that was gutted to replace RC control systems with an Arduino, new motor controller, etc. (see [10/03](https://github.com/davidd-55/ArduRover/blob/main/reports/10-03-2022/10-03-2022.md) and [10/21](https://github.com/davidd-55/ArduRover/blob/main/reports/10-21-2022/10-21-2022.md) reports for more on parts used). These components can communicate effectively and the software that drives them can successfully pilot the car along a predetermined path (see [video](https://youtu.be/Pe0to9lpWN0)).
 
@@ -69,11 +69,11 @@
  | ![GPS Shield](https://github.com/davidd-55/ArduRover/blob/main/docs/media/GPS.jpeg?raw=true) | ![Motor Controller Wiring](https://github.com/davidd-55/ArduRover/blob/main/docs/media/MotorController_TopView.jpeg?raw=true)| ![ArduRover Platform](https://github.com/davidd-55/ArduRover/blob/main/docs/media/ArduRover_Profile.jpeg?raw=true) |
  | ![Compass](https://github.com/davidd-55/ArduRover/blob/main/docs/media/Compass.jpeg?raw=true) | ![Motor Controller Diagram](https://github.com/davidd-55/ArduRover/blob/main/docs/media/MotorControllerDiagram.jpg?raw=true) | ![Shield Wiring](https://github.com/davidd-55/ArduRover/blob/main/docs/media/ShieldWiring.jpeg?raw=true) |
 
- #### 4c. Setbacks Encountered
+#### 4c. Setbacks Encountered
 
  Somehow, I only encountered one major setback throughout the duration of this project (a huge win compared to what I expected). In November, I unfortunately fried the GPS shield I had purcahsed by providing too much voltage on accident from a plug-in power supply. This stalled my progress a bit since I was missing a functional GPS shield and probably contributed to my inability to get a fully-functioning navigation system up and running in time. Regardless, I was able to order a new GPS shield and am now using it to make progress on navigation software!
 
- #### 4c. Upcoming Work
+#### 4c. Upcoming Work
 
  Unfortunately, I was not able to built out autonomous driving capabilities prior to the end of the Fall 2022 semester. Even though I replaced the fried GPS shield and had all the required hardware on-hand, I simply ran out of time to implement and test the software necessary for GPS waypoint navigation. Over the coming weeks, I hope to finalize the navigation software necessary for this feature as the rest of my workload winds down.
 
