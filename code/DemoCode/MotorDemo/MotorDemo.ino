@@ -24,13 +24,21 @@ void loop() {
   }
 
   // forward high speed 3s
-  if (millis() > 2000 && millis() <= 5000) {
+  if (millis() > 2000 && millis() <= 4000) {
+    center();
     forward(HIGH_SPEED);
+  }
+
+  // forward high speed 3s
+  if (millis() > 4000 && millis() <= 5000) {
+    center();
+    forward(LOW_SPEED);
   }
 
   // reverse mid speed 3s
   if (millis() > 5000 && millis() <= 8000) {
-    reverse(MID_SPEED);
+    center();
+    reverse(LOW_SPEED);
   }
 
   // left + forward
@@ -47,11 +55,13 @@ void loop() {
 
   // reverse low
   if (millis() > 16000 && millis() <= 18000) {
+    center();
     reverse(LOW_SPEED);
   }
 
   // forward low
   if (millis() > 18000 && millis() <= 20000) {
+    center();
     forward(LOW_SPEED);
   }
 
@@ -75,14 +85,20 @@ void reverse(int speed) {
 
 // Motor B IN3 HIGH + Motor B IN4 0 = LEFT
 void left() {
-  analogWrite(steerMotorB_In3, HIGH); 
+  analogWrite(steerMotorB_In3, HIGH_SPEED); 
   analogWrite(steerMotorB_In4, 0); 
 }
 
 // Motor B IN3 0 + Motor B IN4 HIGH = RIGHT
 void right() {
   analogWrite(steerMotorB_In3, 0); 
-  analogWrite(steerMotorB_In4, HIGH); 
+  analogWrite(steerMotorB_In4, HIGH_SPEED); 
+}
+
+// Motor B IN3 0 + Motor B IN4 0 = CENTER
+void center() {
+  analogWrite(steerMotorB_In3, 0); 
+  analogWrite(steerMotorB_In4, 0); 
 }
 
 void shutdown() {
