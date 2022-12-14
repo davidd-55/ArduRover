@@ -1,6 +1,8 @@
 # ArduRover: A (soon-to-be) GPS-Powered Smart Rover
 #### *By David D'Attile*
 
+"insert pic"
+
 ## Contents:
 - [1. Introduction](#1-introduction)
 - [2. Related Works](#2-related-works)
