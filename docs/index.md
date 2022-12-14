@@ -21,7 +21,7 @@
  
  ArduRover is a GPS-enabled smart rover based on the Arduino hardware platform. This project served as a way to explore robotics, electronics, and software-for-hardware topics in a fun and accessible manner. This project's status was documented with bi-weekly [reports](https://github.com/davidd-55/ArduRover/tree/main/reports) over the course of the Fall 2022 semester, and this writeup serves as a final, extended report before the semester draws to a close.
 
-## 2. Related Works
+## 2. Related Works and Projects
 
  Before diving headfirst into acquiring parts and learning the basics of electronics, I first brushed up on similar projects and related works taken on by others. Listed below are a few papers and projects I read through and my notes are linked [here](https://github.com/davidd-55/ArduRover/blob/main/literature/ArduRoverSourcesNotes.pdf).
 
